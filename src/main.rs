@@ -9,7 +9,7 @@ use rusty_ytdl::{Video, VideoOptions, VideoQuality, VideoSearchOptions};
 #[command(version, about, long_about = None)]
 struct Args {
     /// Youtube video url to transcribe
-    #[arg(short, long)]
+    #[arg(short='u', long="url")]
     youtube_url: String,
 }
 
